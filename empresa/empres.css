@@ -1,0 +1,209 @@
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px #ffa5c4 ;
+            background-color: #FFDBF1;
+            align-items: center;
+          
+        }
+        
+
+        /* Estilizadno o Header/Blog Title */
+        header {
+            background: linear-gradient(to bottom,#FFA8CF 0%, #FFDBF1);
+            color: #000000;
+            padding: 80px;
+            text-align: center;
+            
+        }
+
+        .header h1 {
+            font-size: 50px;
+        }
+
+        /* Estilizando a top nav bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #FFDBF1;
+            text-align: center;
+        }
+
+        /* Estilizando os links da topnav */
+        .topnav a {
+            float: left;
+            display: block;
+            color: #000000;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            
+        }
+
+        /* Colorindo o hover */
+        .topnav a:hover {
+            background: linear-gradient(to bottom, #FFA8CF 0%, #FFDBF1 100%);
+            color:#FF7ED0;
+            text-align: center;
+        }
+
+        /* Criamos duas colunas uma do lado da outra */
+        /* Coluna da esquerda */
+        .leftcolumn {
+            float: left;
+            width: 75%;
+
+        }
+
+        /* Coluna da direita */
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            background-color: #FFA8CF;
+            padding: 20px;
+        }
+
+        /* Adicionando cartóes para inclusão de artigos */
+        article {
+            background-color: #FFDBF1;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        /* Limpando os floats depois das colunas */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        
+        .left{
+        float: left;
+        display: flex;
+        width: 10%;
+        height: 3300px;
+        /*só um teste boy*/
+        background: linear-gradient(to bottom,#FFDBF1  0%, #FFA8CF 100%);
+        color:#FF7ED0;
+        padding: 20px;
+
+        }
+
+        
+        .right{
+            float: right;
+            display: flex;
+            width: 10%;
+            height:3300px;
+            /*só um teste boy*/
+            background: linear-gradient(to bottom,#FFDBF1  0%, #FFA8CF 100%);
+            color:#FF7ED0;
+            padding: 20px;
+           
+
+        }
+        /* Footer */
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: linear-gradient(to bottom,#FFDBF1  0%, #FFA8CF 100%);
+            color:#FF7ED0;
+        }
+
+        /* Responsavidade */
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+
+        }
+
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+
+
+        textarea
+        {
+            width: 30%;
+            height: 100px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 3px solid #FFA8CF;
+            border-radius: 4px;
+            background: linear-gradient(to bottom,#FFDBF1  0%, #FFA8CF 100%);
+            color:#FF7ED0;
+            font-size: 12px;
+            resize: none;
+        }
+
+        input[type=button]
+        {
+             background: linear-gradient(to bottom,#FFDBF1  0%, #FFA8CF 100%);
+            color:#FF7ED0;
+            border: none;
+            padding: 8px 14px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .dropdown{
+            position: relative;
+            display: inline-block;
+            padding: 15px 15px 8px 8px;
+            border: 10px solid #FFA8CF;
+            text-align: center;
+        }
+
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #FFDBF1 ;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            padding: 15px 15px 8px 8px;
+            border: 10px solid #FF7EDF;
+            
+        }
+
+        .dropdown:hover .dropdown-content{
+            display: block;
+
+        }
+
+        .desc{
+            padding: 15px;
+            text-align: center;
+        }
+
+        img{
+            border-radius: 0;
+            
+            transition: all 1s ease-in-out;
+            
+        }
+        
+        
+        /* para a transição da imagem ela se torta um quadrado assim como muda a borda */
+        img:hover{
+            border-radius: 12px;
+            transform: translateY(-30px);
+        }
+        
+        /* imagem fica no centro */
+        .imagem{
+            display: flex;
+            justify-content: center;
+        }
